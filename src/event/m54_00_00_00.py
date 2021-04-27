@@ -12,7 +12,7 @@ strings:
 94: 
 """
 from soulstruct.darksouls3.events import *
-
+from common_func import BeginHollowArenaMatch
 
 def Constructor():
     """ 0: Event 0 """
@@ -25,19 +25,19 @@ def Constructor():
 
     # --- 0 --- #
     DefineLabel(0)
-    RunCommonEvent(20005920, args=(0, 15405300, 10020000, 10020010))
+    BeginHollowArenaMatch(0, 15405300, 10020000, 10020010)
     RunCommonEvent(20005930, args=(15405300,))
     RunCommonEvent(20005941, args=(15405300,))
     End()
 
     # --- 1 --- #
     DefineLabel(1)
-    RunCommonEvent(20005920, args=(1, 15405300, 10020001, 10020011))
+    BeginHollowArenaMatch(1, 15405300, 10020001, 10020011)
     Goto(Label.L9)
 
     # --- 2 --- #
     DefineLabel(2)
-    RunCommonEvent(20005920, args=(2, 15405300, 10020002, 10020012))
+    BeginHollowArenaMatch(2, 15405300, 10020002, 10020012)
     Goto(Label.L9)
 
     # --- 3 --- #
