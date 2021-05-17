@@ -24,6 +24,9 @@ jobs:
           python-version: '3.9'
           architecture: 'x64'
 
+      - name: Setup Python environment
+        run: pip install -r requirements.txt
+
       - name: Download artifact
         uses: dawidd6/action-download-artifact@v2
         with:
@@ -37,11 +40,15 @@ jobs:
         run: |
           7z x modengine_artifacts/modengine-*/*.zip -o${{github.workspace}}/modengine_install
 
-      - name: 'Build extension'
-        run: make extension
+      - name: 'Build mod'
+        run: make all
         env:
           STEAMWORKS_SDK: "${{ github.workspace }}/third-party/SteamworksSDKCI/steamworks_sdk"
           MODENGINE_SDK: "${{ github.workspace }}/modengine_install/ModEngine-2.0.0.1-win64"
 
-      - name: Setup Python environment
-        run: pip install -r requirements.txt
+      - name: 'Upload artifacts'
+        uses: actions/upload-artifact@v2
+        with:
+          name: 'ds3patch-${{ github.sha }}'
+          path: '${{ runner.workspace }}/dist'
+
