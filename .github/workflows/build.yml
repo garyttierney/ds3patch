@@ -19,6 +19,10 @@ jobs:
           submodules: true
       - uses: ilammy/msvc-dev-cmd@v1
       - uses: lukka/get-cmake@latest
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
 
       - name: Download artifact
         uses: dawidd6/action-download-artifact@v2
@@ -33,16 +37,11 @@ jobs:
         run: |
           7z x modengine_artifacts/modengine-*/*.zip -o${{github.workspace}}/modengine_install
 
-      - name: 'Build with CMake'
-        uses: lukka/run-cmake@v3
-        with:
-          cmakeListsOrSettingsJson: CMakeListsTxtAdvanced
-          cmakeListsTxtPath: '${{ github.workspace }}/src/modengine_extension/CMakeLists.txt'
-          cmakeAppendedArgs: '-G "Ninja"
-            "-DSTEAMWORKS_SDK=${{ github.workspace }}/third-party/SteamworksSDKCI/steamworks_sdk"
-            "-DCMAKE_PREFIX_PATH=${{ github.workspace }}/modengine_install/ModEngine-2.0.0.1-win64/share/cmake"'
-          useVcpkgToolchainFile: false
-          buildDirectory: '${{ runner.workspace }}/build/modengine_extension'
+      - name: 'Build extension'
+        run: make extension
+        env:
+          STEAMWORKS_SDK: "${{ github.workspace }}/third-party/SteamworksSDKCI/steamworks_sdk"
+          MODENGINE_SDK: "${{ github.workspace }}/modengine_install/ModEngine-2.0.0.1-win64"
 
-
-
+      - name: Setup Python environment
+        run: pip install -r requirements.txt

@@ -1,1 +1,1 @@
-./../soulstruct
+git+https://github.com/Grimrukh/soulstruct#egg=soulstruct
