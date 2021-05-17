@@ -87,6 +87,20 @@ void P2PSessionManager::on_lobby_update(LobbyDataUpdate_t* lobby_data)
     }
 }
 
+struct SteamSurveillance{};
+auto surveillance_global = (struct SteamSurveillance*) 0x14491b0f8;
+
+using notify_session_request_ptr = void (*)(struct SteamSurveillance *surveillance, P2PSessionRequest_t *request);
+auto notify_session_request = (notify_session_request_ptr) 0x141959980;
+
+void P2PSessionManager::on_session_request(SteamNetworkingMessagesSessionRequest_t *request)
+{
+    P2PSessionRequest_t legacy_request = {};
+    legacy_request.m_steamIDRemote = request->m_identityRemote.GetSteamID();
+
+    notify_session_request(surveillance_global, &legacy_request);
+}
+
 bool P2PSessionManager::is_p2p_packet_available(uint32_t* size)
 {
     if (recv_worker.queue.empty()) {

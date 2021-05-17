@@ -43,4 +43,5 @@ private:
 
     STEAM_CALLBACK(P2PSessionManager, on_lobby_entered, LobbyEnter_t);
     STEAM_CALLBACK(P2PSessionManager, on_lobby_update, LobbyDataUpdate_t);
+    STEAM_CALLBACK(P2PSessionManager, on_session_request, SteamNetworkingMessagesSessionRequest_t);
 };
