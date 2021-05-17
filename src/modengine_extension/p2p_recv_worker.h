@@ -6,7 +6,6 @@
 #include <concurrent_queue.h>
 #include <atomic>
 
-
 class P2PRecvWorker {
     friend class P2PSessionManager;
 

@@ -1,8 +1,18 @@
 #include "steam_bindings.h"
 
+#include <filesystem>
+
+namespace fs = std::filesystem;
+
 SteamBindings::SteamBindings()
 {
-    auto steam_client = GetModuleHandleW(L"steamclient.dll");
+
+
+}
+
+void SteamBindings::init()
+{
+    auto steam_client = GetModuleHandleW(L"steamclient64.dll");
     auto scanner = modengine::MemoryScanner(steam_client);
     auto interface_provider = scanner.find("\x89\x54\x24\x10\x89\x4C\x24\x08\x55\x53\x57\x41\x54\x41\x55\x41\x56\x41\x57\x48\x8B\xEC");
 

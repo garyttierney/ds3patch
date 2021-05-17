@@ -38,6 +38,7 @@ void P2PSessionManager::start()
 {
     global = this;
 
+    steam.init();
     steam.networking_utils->InitRelayNetworkAccess();
 
     auto steam_api = GetModuleHandle("steam_api64.dll");
@@ -45,14 +46,16 @@ void P2PSessionManager::start()
     auto steam_networking = (uintptr_t*)steam_networking_provider();
 
     auto scanner = modengine::MemoryScanner(steam_api);
-    scanner.replace_at(*steam_networking, [](uintptr_t location) {
+    if (!scanner.replace_at(*steam_networking, [](uintptr_t location) {
         auto vtable = (uintptr_t*)location;
         vtable[0] = (uintptr_t)&SendP2PPacket;
         vtable[1] = (uintptr_t)&IsP2PPacketAvailable;
         vtable[2] = (uintptr_t)&ReadP2PPacket;
         vtable[3] = (uintptr_t)&AcceptP2PSessionWithUser;
         vtable[4] = (uintptr_t)&CloseP2PSessionWithUser;
-    });
+    })) {
+        throw std::runtime_error("Failed to hook SteamNetworking");
+    }
 
     recv_worker_thread = std::thread(&P2PRecvWorker::run, &recv_worker);
     send_worker_thread = std::thread(&P2PSendWorker::run, &send_worker);

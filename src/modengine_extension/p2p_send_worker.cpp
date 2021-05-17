@@ -1,15 +1,21 @@
 #include "p2p_send_worker.h"
 
+#include <chrono>
 #include <thread>
 
 void P2PSendWorker::run()
 {
+    using namespace std::chrono_literals;
+
+    running = true;
+
     P2POutboundMessage curr;
     SteamNetworkingIdentity curr_recipient_id = {};
 
     while (running) {
         if (!queue.try_pop(curr)) {
             std::this_thread::yield();
+            std::this_thread::sleep_for(5ms);
             continue;
         }
 
