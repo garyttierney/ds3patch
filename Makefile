@@ -28,4 +28,4 @@ $(CMAKE_BUILD_DIR)/build.ninja: $(CMAKE_SOURCE_DIR)/CMakeLists.txt
 $(CMAKE_BUILD_DIR)/ds3patch: $(CMAKE_BUILD_DIR)/build.ninja
 	ninja -C $(@D) $(@F)
 	@-mkdir "dist\native"
-	xcopy "$(CMAKE_BUILD_DIR)\ds3patch.dll" "dist\native\ds3patch.dll"
+	cp "$(CMAKE_BUILD_DIR)\ds3patch.dll" "dist\native\ds3patch.dll"
