@@ -24,7 +24,8 @@ $(CMAKE_BUILD_DIR)/build.ninja: $(CMAKE_SOURCE_DIR)/CMakeLists.txt
 	$(CMAKE) \
  		-DCMAKE_PREFIX_PATH="$(MODENGINE_SDK)\share\cmake" \
  		-DSTEAMWORKS_SDK="$(STEAMWORKS_SDK)" \
-		-S $(<D) -B $(@D) -G "Ninja" -C "Release"
+ 		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
+		-S $(<D) -B $(@D) -G "Ninja"
 
 $(CMAKE_BUILD_DIR)/ds3patch: $(CMAKE_BUILD_DIR)/build.ninja
 	ninja -C $(@D) $(@F)
