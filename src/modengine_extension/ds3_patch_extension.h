@@ -16,7 +16,7 @@ public:
 
     virtual void on_attach();
     virtual void on_detach();
-    virtual std::string id();
+    virtual const char* id();
 
 private:
     P2PSessionManager* p2p_manager;

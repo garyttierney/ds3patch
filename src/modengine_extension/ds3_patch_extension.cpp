@@ -5,7 +5,7 @@
 
 std::thread startup_thread;
 
-std::string DS3PatchExtension::id()
+const char* DS3PatchExtension::id()
 {
     return "ds3_patch";
 }
@@ -13,16 +13,30 @@ std::string DS3PatchExtension::id()
 void DS3PatchExtension::on_attach()
 {
     using namespace std::chrono_literals;
+    using clock = std::chrono::steady_clock;
 
     startup_thread = std::thread([&]() {
-        void* steamclient = nullptr;
+        auto start = clock::now();
+        auto initialized = false;
 
-        do {
+        while ((clock::now() - start) < 15s && !initialized) {
             std::this_thread::sleep_for(500ms);
-            steamclient = GetModuleHandleW(L"steamclient64.dll");
-        } while (steamclient == nullptr);
 
-        p2p_manager->start();
+            auto steamclient_handle = GetModuleHandleW(L"steamclient64.dll");
+            if (steamclient_handle == nullptr) {
+                continue;
+            }
+
+            auto steampipe_initialized = !!SteamAPI_GetHSteamUser() && !!SteamAPI_GetHSteamPipe();
+            if (steampipe_initialized) {
+                initialized = true;
+                break;
+            }
+        }
+
+        if (initialized) {
+            p2p_manager->start();
+        }
     });
 }
 
