@@ -7,6 +7,7 @@ SRC_DIR = src
 DIST_DIR = dist
 PYTHON ?= python
 CMAKE ?= cmake
+CP ?= cp
 STEAMWORKS_SDK ?= H:\\Development\workspace\sdk
 MODENGINE_SDK ?= H:\Development\workspace\dark-souls-3\modengine2\installroot
 EMEVD_SOURCES = $(wildcard src/event/*.py)
@@ -28,4 +29,4 @@ $(CMAKE_BUILD_DIR)/build.ninja: $(CMAKE_SOURCE_DIR)/CMakeLists.txt
 $(CMAKE_BUILD_DIR)/ds3patch: $(CMAKE_BUILD_DIR)/build.ninja
 	ninja -C $(@D) $(@F)
 	@-mkdir "dist\native"
-	cp "$(CMAKE_BUILD_DIR)\ds3patch.dll" "dist\native\ds3patch.dll"
+	$(CP) "$(CMAKE_BUILD_DIR)\ds3patch.dll" "dist\native\ds3patch.dll"
