@@ -26,8 +26,11 @@ jobs:
           workflow: build.yml
           workflow_conclusion: success
           branch: feat/overlay-scripting
-          path: modengine_install
+          path: modengine_artifacts
           repo: soulsmods/modengine2
+
+      - name: Extract Mod Engine SDK
+        run: 7z x modengine_artifacts/modengine-*/*.zip -o${{github.workspace}}/modengine_install
 
       - name: 'Build with CMake'
         uses: lukka/run-cmake@v3
