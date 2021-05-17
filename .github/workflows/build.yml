@@ -30,7 +30,8 @@ jobs:
           repo: soulsmods/modengine2
 
       - name: Extract Mod Engine SDK
-        run: 7z x modengine_artifacts/modengine-*/*.zip -o${{github.workspace}}/modengine_install
+        run: |
+          7z x modengine_artifacts/modengine-*/*.zip -o${{github.workspace}}/modengine_install
 
       - name: 'Build with CMake'
         uses: lukka/run-cmake@v3
@@ -39,7 +40,7 @@ jobs:
           cmakeListsTxtPath: '${{ github.workspace }}/src/modengine_extension/CMakeLists.txt'
           cmakeAppendedArgs: '-G "Unix Makefiles"
             "-DSTEAMWORKS_SDK=${{ github.workspace }}/vendor/SteamworksSDKCI/steamworks_sdk"
-            "-DCMAKE_PREFIX_PATH=${{ github.workspace }}/modengine_install/share/cmake"'
+            "-DCMAKE_PREFIX_PATH=${{ github.workspace }}/modengine_install/ModEngine-2.0.0.1-win64/share/cmake"'
           useVcpkgToolchainFile: false
           buildDirectory: '${{ runner.workspace }}/build/modengine_extension'
 
