@@ -92,7 +92,7 @@ void P2PSessionManager::on_lobby_update(LobbyDataUpdate_t* lobby_data)
 
     auto data = std::string(steam.matchmaking->GetLobbyMemberData(lobby_data->m_ulSteamIDLobby, lobby_data->m_ulSteamIDMember, DS3PATCH_LOBBY_DATA_KEY));
     if (data == DS3PATCH_LOBBY_DATA_VALUE) {
-        spdlog::info("Lobby member {:x} is also running modern netcode", lobby_data->m_ulSteamIdMember);
+        spdlog::info("Lobby member {:x} is also running modern netcode", lobby_data->m_ulSteamIDMember);
         updated_p2p_users.insert(lobby_data->m_ulSteamIDMember);
     }
 }
