@@ -14,6 +14,7 @@ public:
     ISteamNetworkingMessages* networking_messages;
     ISteamNetworkingUtils* networking_utils;
     ISteamMatchmaking* matchmaking;
+    ISteamUtils* utils;
 
     void init();
 };

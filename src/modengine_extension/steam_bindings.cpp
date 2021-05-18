@@ -25,4 +25,5 @@ void SteamBindings::init()
     this->networking_messages = (ISteamNetworkingMessages*)steam_interface_provider(1, 1, STEAMNETWORKINGMESSAGES_INTERFACE_VERSION, "NetworkingMessages");
     this->networking_utils = (ISteamNetworkingUtils*)steam_interface_provider(1, 1, STEAMNETWORKINGUTILS_INTERFACE_VERSION, "NetworkingUtils");
     this->matchmaking = (ISteamMatchmaking*)steam_interface_provider(1, 1, STEAMMATCHMAKING_INTERFACE_VERSION, "Matchmaking");
+    this->utils = (ISteamUtils*)steam_interface_provider(1, 1, STEAMUTILS_INTERFACE_VERSION, "Utils");
 }
