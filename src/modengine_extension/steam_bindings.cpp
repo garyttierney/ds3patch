@@ -20,10 +20,15 @@ void SteamBindings::init()
         throw std::runtime_error("Unable to find Steam interface provider");
     }
 
-    auto steam_interface_provider = (GetSteamInterfacePointer) *interface_provider;
-
-    this->networking_messages = (ISteamNetworkingMessages*)steam_interface_provider(1, 1, STEAMNETWORKINGMESSAGES_INTERFACE_VERSION, "NetworkingMessages");
+    this->steam_interface_provider = (GetSteamInterfacePointer) *interface_provider;
     this->networking_utils = (ISteamNetworkingUtils*)steam_interface_provider(1, 1, STEAMNETWORKINGUTILS_INTERFACE_VERSION, "NetworkingUtils");
     this->matchmaking = (ISteamMatchmaking*)steam_interface_provider(1, 1, STEAMMATCHMAKING_INTERFACE_VERSION, "Matchmaking");
     this->utils = (ISteamUtils*)steam_interface_provider(1, 1, STEAMUTILS_INTERFACE_VERSION, "Utils");
+    this->user = (ISteamUser*)steam_interface_provider(1, 1, STEAMUSER_INTERFACE_VERSION, "User");
+}
+
+void SteamBindings::init_net_bindings()
+{
+    this->networking_messages = (ISteamNetworkingMessages*)steam_interface_provider(1, 1, STEAMNETWORKINGMESSAGES_INTERFACE_VERSION, "NetworkingMessages");
+    this->networking_sockets = (ISteamNetworkingSockets*)steam_interface_provider(1, 1, STEAMNETWORKINGSOCKETS_INTERFACE_VERSION, "NetworkingSockets");
 }
