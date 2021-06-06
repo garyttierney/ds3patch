@@ -2,6 +2,7 @@
 crash_reporting = true
 debug = true
 external_dlls = ["native/ds3patch.dll"]
+script_roots = ["native/scripts"]
 
 [extension.debug_menu]
 enabled = true

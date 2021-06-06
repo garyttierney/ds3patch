@@ -40,7 +40,8 @@ using namespace spdlog;
 void P2PSessionManager::start()
 {
     global = this;
-    info("Started P2PSessionManager, identity: {:x}", steam.user->GetSteamID().ConvertToUint64());
+
+    info("Started P2PSessionManager");
 
     steam.init();
     steam.utils->SetWarningMessageHook([](int severity, const char* text) {
@@ -48,8 +49,7 @@ void P2PSessionManager::start()
     });
 
     steam.networking_utils->InitRelayNetworkAccess();
-    steam.init_net_bindings();
-
+    steam.init();
     auto steam_api = GetModuleHandle("steam_api64.dll");
     auto steam_networking_provider = (decltype(&SteamNetworking))GetProcAddress(steam_api, "SteamNetworking");
     auto steam_networking = (uintptr_t*)steam_networking_provider();
@@ -82,15 +82,9 @@ void P2PSessionManager::stop()
 void P2PSessionManager::on_lobby_entered(LobbyEnter_t* lobby)
 {
     updated_p2p_users.clear();
+    current_lobby.SetFromUint64(lobby->m_ulSteamIDLobby);
 
     info("Joined a lobby, flagging self as modern netcode client");
-
-    CSteamID lobby_id(lobby->m_ulSteamIDLobby);
-    if (steam.matchmaking->GetLobbyOwner(lobby_id) == steam.user->GetSteamID()) {
-        steam.host = true;
-    } else {
-        steam.host = false;
-    }
 
     // @todo: use this flag to send traffic to non-modded clients.
     steam.matchmaking->SetLobbyMemberData(lobby->m_ulSteamIDLobby, DS3PATCH_LOBBY_DATA_KEY, DS3PATCH_LOBBY_DATA_VALUE);
@@ -175,6 +169,7 @@ bool P2PSessionManager::accept_session_with_user(const CSteamID& user)
     SteamNetworkingIdentity id = {};
     id.SetSteamID(user);
 
+    active_peers.insert(user);
     steam.networking_messages->AcceptSessionWithUser(id);
     return true;
 }
@@ -184,6 +179,7 @@ bool P2PSessionManager::close_session_with_user(const CSteamID& user)
     SteamNetworkingIdentity id = {};
     id.SetSteamID(user);
 
+    active_peers.erase(user);
     steam.networking_messages->CloseSessionWithUser(id);
     return true;
 }

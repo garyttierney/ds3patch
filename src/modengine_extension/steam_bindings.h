@@ -22,6 +22,4 @@ public:
     bool host = false;
 
     void init();
-
-    void init_net_bindings();
 };

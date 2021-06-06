@@ -11,10 +11,10 @@ void P2PRecvWorker::run()
     running = true;
 
     P2PInboundMessage current;
-    SteamNetworkingMessage_t* messages = nullptr;
+    SteamNetworkingMessage_t* messages[MAX_MESSAGES];
 
     while (running) {
-        auto res = steam->networking_messages->ReceiveMessagesOnChannel(0, &messages, MAX_MESSAGES);
+        auto res = steam->networking_messages->ReceiveMessagesOnChannel(0, messages, MAX_MESSAGES);
 
         if (res == 0) {
             std::this_thread::yield();
@@ -23,7 +23,7 @@ void P2PRecvWorker::run()
         }
 
         for (auto i = 0; i < res; i++) {
-            SteamNetworkingMessage_t* message = &messages[i];
+            SteamNetworkingMessage_t* message = messages[i];
 
             const char* data = (char*)message->GetData();
             current.data = std::vector(data, data + message->GetSize());
@@ -32,8 +32,6 @@ void P2PRecvWorker::run()
             queue.push(current);
             message->Release();
         }
-
-        messages = nullptr;
     }
 }
 

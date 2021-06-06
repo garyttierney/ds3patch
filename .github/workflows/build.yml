@@ -45,6 +45,7 @@ jobs:
         env:
           STEAMWORKS_SDK: "${{ github.workspace }}/third-party/SteamworksSDKCI/steamworks_sdk"
           MODENGINE_SDK: "${{ github.workspace }}/modengine_install/ModEngine-2.0.0.1-win64"
+          BUILD_TYPE: RelWithDebInfo
 
       - name: "Copy modengine to dist/"
         run: |

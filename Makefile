@@ -3,6 +3,7 @@
 CMAKE_BUILD_DIR = modengine_extension_build
 CMAKE_SOURCE_DIR = src/modengine_extension
 
+BUILD_TYPE ?= Debug
 SRC_DIR = src
 DIST_DIR = dist
 PYTHON ?= python
@@ -24,7 +25,7 @@ $(CMAKE_BUILD_DIR)/build.ninja: $(CMAKE_SOURCE_DIR)/CMakeLists.txt
 	$(CMAKE) \
  		-DCMAKE_PREFIX_PATH="$(MODENGINE_SDK)\share\cmake" \
  		-DSTEAMWORKS_SDK="$(STEAMWORKS_SDK)" \
- 		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
+ 		-DCMAKE_BUILD_TYPE="$(BUILD_TYPE)" \
 		-S $(<D) -B $(@D) -G "Ninja"
 
 $(CMAKE_BUILD_DIR)/ds3patch: $(CMAKE_BUILD_DIR)/build.ninja

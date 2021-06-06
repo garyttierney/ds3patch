@@ -32,12 +32,6 @@ void P2PSendWorker::run()
             send_flags |= k_nSteamNetworkingSend_Reliable;
         }
 
-        // @TODO: hack, see https://github.com/ValveSoftware/GameNetworkingSockets/issues/174
-        if (steam->host && !first) {
-            std::this_thread::sleep_for(std::chrono::milliseconds(3000));
-            first = true;
-        }
-
         curr_recipient_id.SetSteamID(curr.recipient);
         auto result = steam->networking_messages->SendMessageToUser(curr_recipient_id, &curr.data[0], curr.data.size(), send_flags, 0);
         if (result != k_EResultOK) {
