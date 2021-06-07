@@ -1,0 +1,59 @@
+name: CMake
+
+on: [push]
+
+env:
+  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    # The CMake configure and build commands are platform agnostic and should work equally
+    # well on Windows or Mac.  You can convert this to a matrix build if you need
+    # cross-platform coverage.
+    # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - uses: ilammy/msvc-dev-cmd@v1
+      - uses: lukka/get-cmake@latest
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+
+      - name: Setup Python environment
+        run: pip install -r requirements.txt
+
+      - name: Download artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          workflow: build.yml
+          workflow_conclusion: success
+          branch: feat/overlay-scripting
+          path: modengine_artifacts
+          repo: soulsmods/modengine2
+
+      - name: Extract Mod Engine SDK
+        run: |
+          7z x modengine_artifacts/modengine-*/*.zip -o${{github.workspace}}/modengine_install
+
+      - name: 'Build mod'
+        run: make all
+        env:
+          STEAMWORKS_SDK: "${{ github.workspace }}/third-party/SteamworksSDKCI/steamworks_sdk"
+          MODENGINE_SDK: "${{ github.workspace }}/modengine_install/ModEngine-2.0.0.1-win64"
+          BUILD_TYPE: RelWithDebInfo
+
+      - name: "Copy modengine to dist/"
+        run: |
+          cp -R "${{ github.workspace }}/modengine_install/ModEngine-2.0.0.1-win64" dist/
+
+      - name: 'Upload artifacts'
+        uses: actions/upload-artifact@v2
+        with:
+          name: 'ds3patch-${{ github.sha }}'
+          path: '${{ github.workspace }}/dist'
+

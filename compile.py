@@ -1,10 +1,11 @@
 import argparse
+from pathlib import Path
 
 from soulstruct.darksouls3.events import EMEVD
 
 
 def compile_evs(input: str, output: str):
-    example_emevd = EMEVD(input)
+    example_emevd = EMEVD(input, script_path=Path(input).parent)
     example_emevd.write(output)
 
 

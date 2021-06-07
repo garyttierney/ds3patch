@@ -1,1 +1,1 @@
-./../soulstruct
+git+https://github.com/garyttierney/soulstruct@bugfix/version-file#egg=soulstruct

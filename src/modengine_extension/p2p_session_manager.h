@@ -10,6 +10,8 @@
 #include <set>
 
 class P2PSessionManager {
+    friend class DS3PatchExtension;
+    friend class DS3PatchScripting;
 public:
     P2PSessionManager()
         : steam()
@@ -32,6 +34,8 @@ public:
 
     void stop();
 
+    std::set<CSteamID> updated_p2p_users;
+
 private:
     SteamBindings steam;
     P2PSendWorker send_worker;
@@ -39,8 +43,11 @@ private:
 
     std::thread send_worker_thread;
     std::thread recv_worker_thread;
-    std::set<CSteamID> updated_p2p_users;
+    std::set<CSteamID> active_peers;
+    CSteamID current_lobby;
 
     STEAM_CALLBACK(P2PSessionManager, on_lobby_entered, LobbyEnter_t);
     STEAM_CALLBACK(P2PSessionManager, on_lobby_update, LobbyDataUpdate_t);
+    STEAM_CALLBACK(P2PSessionManager, on_session_request, SteamNetworkingMessagesSessionRequest_t);
+    STEAM_CALLBACK(P2PSessionManager, on_session_request_failed, SteamNetworkingMessagesSessionFailed_t);
 };

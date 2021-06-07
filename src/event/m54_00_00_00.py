@@ -25,19 +25,19 @@ def Constructor():
 
     # --- 0 --- #
     DefineLabel(0)
-    BeginHollowArenaMatch(0, 15405300, 10020000, 10020010)
+    RunCommonEvent(20005920, args=(15405300, 10020000, 10020010))
     RunCommonEvent(20005930, args=(15405300,))
     RunCommonEvent(20005941, args=(15405300,))
     End()
 
     # --- 1 --- #
     DefineLabel(1)
-    BeginHollowArenaMatch(1, 15405300, 10020001, 10020011)
+    RunCommonEvent(20005920, args=(15405300, 10020001, 10020011))
     Goto(Label.L9)
 
     # --- 2 --- #
     DefineLabel(2)
-    BeginHollowArenaMatch(2, 15405300, 10020002, 10020012)
+    RunCommonEvent(20005920, args=(15405300, 10020002, 10020012))
     Goto(Label.L9)
 
     # --- 3 --- #

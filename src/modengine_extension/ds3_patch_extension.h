@@ -3,6 +3,7 @@
 #include "p2p_session_manager.h"
 
 #include <modengine/extension.h>
+#include <lua.h>
 
 using namespace modengine;
 
@@ -16,10 +17,11 @@ public:
 
     virtual void on_attach();
     virtual void on_detach();
-    virtual std::string id();
+    virtual const char* id();
 
 private:
     P2PSessionManager* p2p_manager;
+    void bind_api();
 };
 
 extern "C" bool __declspec(dllexport) modengine_ext_init(ModEngineExtensionConnector* connector, ModEngineExtension** extension)

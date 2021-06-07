@@ -1,0 +1,22 @@
+[modengine]
+crash_reporting = true
+debug = true
+external_dlls = ["native/ds3patch.dll"]
+script_roots = ["native/scripts"]
+
+[extension.debug_menu]
+enabled = true
+
+[extension.scylla_hide]
+enabled = true
+
+[extension.mod_loader]
+enabled = true
+
+[[extension.mod_loader.mods]]
+enabled = true
+path = "./"
+name = "DS3 Community Patch"
+
+[extension.ds3_patch]
+enabled = true
