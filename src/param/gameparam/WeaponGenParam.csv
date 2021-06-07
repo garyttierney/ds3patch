@@ -1,5 +1,5 @@
 #WeaponGenParam=WEAPON_GEN_PARAM_ST
-ID,Name,wepParamId,gemSlotType_0,gemGenId0,gemSlotType_1,gemGenId1,gemSlotType_2,gemGenId2,gemSlotType_3,gemGenId3,gemSlotType_4,gemGenId4
+ID,Name,wepParamId - wepParamId - s32,gemSlotType_0 - gemSlotType_0 - s32,gemGenId0 - gemGenId0 - s32,gemSlotType_1 - gemSlotType_1 - s32,gemGenId1 - gemGenId1 - s32,gemSlotType_2 - gemSlotType_2 - s32,gemGenId2 - gemGenId2 - s32,gemSlotType_3 - gemSlotType_3 - s32,gemGenId3 - gemGenId3 - s32,gemSlotType_4 - gemSlotType_4 - s32,gemGenId4 - gemGenId4 - s32
 0,Fushikure. -- ふしくれたえだ,0,-2147483648,-1,-2147483648,-1,-2147483648,-1,-2147483648,-1,-2147483648,-1
 90000,[Prototyping] Torches -- 【プロト用】松明,90000,-2147483296,-1,-2147483296,-1,-2147483296,-1,-2147483296,-1,-2147483296,-1
 91000,[Prototyping] Orb -- 【プロト用】オーブ,91000,-2147483296,-1,-2147483296,-1,-2147483296,-1,-2147483296,-1,-2147483296,-1

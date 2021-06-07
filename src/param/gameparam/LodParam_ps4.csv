@@ -1,5 +1,5 @@
 #LodParam_ps4=LOD_BANK
-ID,Name,lv01_BorderDist,lv01_PlayDist,lv12_BorderDist,lv12_PlayDist,textureLod,pad1,lv23_BorderDist,lv23_PlayDist,lv34_BorderDist,lv34_PlayDist,lv45_BorderDist,lv45_PlayDist,DistanceScaleId [0-255],pad2
+ID,Name,lv01_BorderDist - lv01_BorderDist - f32,lv01_PlayDist - lv01_PlayDist - f32,lv12_BorderDist - lv12_BorderDist - f32,lv12_PlayDist - lv12_PlayDist - f32,textureLod - textureLod - u8,pad1 - pad1 - dummy8,lv23_BorderDist - lv23_BorderDist - f32,lv23_PlayDist - lv23_PlayDist - f32,lv34_BorderDist - lv34_BorderDist - f32,lv34_PlayDist - lv34_PlayDist - f32,lv45_BorderDist - lv45_BorderDist - f32,lv45_PlayDist - lv45_PlayDist - f32,DistanceScaleId [0-255] - DistanceScaleId [0-255] - u8,pad2 - pad2 - dummy8
 0,Default settings -- デフォルト設定,15,1,30,2,1,-,9999,1,9999,1,9999,1,0,-
 1,L0 Main -- L0メイン,40,1,1000,2,1,-,9999,1,9999,1,9999,1,0,-
 2,L1 Main -- L1メイン,15,1,1000,2,1,-,9999,1,9999,1,9999,1,0,-

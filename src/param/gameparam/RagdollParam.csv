@@ -1,5 +1,5 @@
 #RagdollParam=RAGDOLL_PARAM_ST
-ID,Name,hierarchGain,velocityDamping,accelGain,velocityGain,positionGain,maxLinerVelocity,maxAngularVelocity,snapGain,enable,partsHitMaskNo,pad1
+ID,Name,hierarchGain - hierarchGain - f32,velocityDamping - velocityDamping - f32,accelGain - accelGain - f32,velocityGain - velocityGain - f32,positionGain - positionGain - f32,maxLinerVelocity - maxLinerVelocity - f32,maxAngularVelocity - maxAngularVelocity - f32,snapGain - snapGain - f32,enable - enable - u8,partsHitMaskNo - partsHitMaskNo - s8,pad1 - pad1 - dummy8
 0,Move -- 動かない,0,1,1,1,1,10,10,1,0,-1,-
 1,Havok Default Value -- Havokのデフォルト値,0.17,0,1,0.6,0.05,1.4,1.8,0.1,0,-1,-
 1000,Segunda: The Evil Spirits -- グンダ：邪霊,0,0,0,0,0,0,0,0,1,0,-

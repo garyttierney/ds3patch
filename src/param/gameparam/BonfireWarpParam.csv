@@ -1,5 +1,5 @@
 #BonfireWarpParam=BONFIRE_WARP_PARAM_ST
-ID,Name,LocationEventId,WarpEventId,BonfireNameId,DescriptionTextId,PictureId,ListId,IsDisableQuickwarp,CeremonyId,onlineAreaId,pad1
+ID,Name,LocationEventId - LocationEventId - s32,WarpEventId - WarpEventId - s32,BonfireNameId - BonfireNameId - s32,DescriptionTextId - DescriptionTextId - s32,PictureId - PictureId - s32,ListId - ListId - u8,IsDisableQuickwarp - IsDisableQuickwarp - u8,CeremonyId - CeremonyId - s16,onlineAreaId - onlineAreaId - s32,pad1 - pad1 - dummy8
 0,[usually bonfire] base bonfire -- 【通常篝火】拠点篝火,14000000,4001950,211200,211600,99999,99,1,0,0,-
 1,[Normal bonfire] Tutorial bonfire -- 【通常篝火】チュートリアル篝火,14000000,4001950,211200,211600,10001,0,1,0,0,-
 2,The big wall of Le dress -- ルドレスの大壁,14000001,4001951,211201,211601,10002,0,0,0,0,-

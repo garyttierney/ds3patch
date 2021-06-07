@@ -1,5 +1,5 @@
 #GameAreaParam=GAME_AREA_PARAM_ST
-ID,Name,BonusSoul_single,BonusSoul_multi,humanityPointCountFlagIdTop,humanityDropPoint1,humanityDropPoint2,humanityDropPoint3,humanityDropPoint4,humanityDropPoint5,humanityDropPoint6,humanityDropPoint7,humanityDropPoint8,humanityDropPoint9,humanityDropPoint10,subBonusSoul_single,subbonusSoul_multi,pad1
+ID,Name,BonusSoul_single - BonusSoul_single - s32,BonusSoul_multi - BonusSoul_multi - s32,humanityPointCountFlagIdTop - humanityPointCountFlagIdTop - s32,humanityDropPoint1 - humanityDropPoint1 - s16,humanityDropPoint2 - humanityDropPoint2 - s16,humanityDropPoint3 - humanityDropPoint3 - s16,humanityDropPoint4 - humanityDropPoint4 - s16,humanityDropPoint5 - humanityDropPoint5 - s16,humanityDropPoint6 - humanityDropPoint6 - s16,humanityDropPoint7 - humanityDropPoint7 - s16,humanityDropPoint8 - humanityDropPoint8 - s16,humanityDropPoint9 - humanityDropPoint9 - s16,humanityDropPoint10 - humanityDropPoint10 - s16,subBonusSoul_single - subBonusSoul_single - s32,subbonusSoul_multi - subbonusSoul_multi - s32,pad1 - pad1 - dummy8
 0,Test -- テスト,10000,10000,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,10000,-
 1,Test One -- テスト1,10000,10000,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,10000,-
 100,Lat _ Bastards -- 石柱_なりそこない,15000,15000,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,10000,-

@@ -1,5 +1,5 @@
 #PhantomParam=PHANTOM_PARAM_ST
-ID,Name,Alpha1,Alpha2,Alpha3,Alpha4,Alpha5,R1,G1,B1,R2,G2,B2,R3,G3,B3,R4,G4,B4,R5,G5,B5,Unk1,GhostAlpha1,GhostAlpha2,GhostType,pad1
+ID,Name,Alpha1 - Alpha1 - f32,Alpha2 - Alpha2 - f32,Alpha3 - Alpha3 - f32,Alpha4 - Alpha4 - f32,Alpha5 - Alpha5 - f32,R1 - R1 - u8,G1 - G1 - u8,B1 - B1 - u8,R2 - R2 - u8,G2 - G2 - u8,B2 - B2 - u8,R3 - R3 - u8,G3 - G3 - u8,B3 - B3 - u8,R4 - R4 - u8,G4 - G4 - u8,B4 - B4 - u8,R5 - R5 - u8,G5 - G5 - u8,B5 - B5 - u8,Unk1 - Unk1 - u8,GhostAlpha1 - GhostAlpha1 - f32,GhostAlpha2 - GhostAlpha2 - f32,GhostType - GhostType - u8,pad1 - pad1 - dummy8
 1,小白 Phantom -- 小白ファントム,1,0,1,1,1,160,160,160,160,160,160,160,160,160,160,160,160,160,160,160,0,1,1,0,-
 2,White Phantom -- 白ファントム,1,0.02,1,1,1,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,0,1,1,0,-
 3,Blue Phantom 0 -- 青ファントム0,0.63,1,1,1,0.5,64,128,200,80,48,0,255,255,255,255,255,255,128,128,200,0,1,0.5,0,-

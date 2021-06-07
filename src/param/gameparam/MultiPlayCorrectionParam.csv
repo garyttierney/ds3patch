@@ -1,5 +1,5 @@
 #MultiPlayCorrectionParam=MULTI_PLAY_CORRECTION_PARAM_ST
-ID,Name,CorrectionVal0,CorrectionVal1,CorrectionVal2,CorrectionVal3,pad1
+ID,Name,CorrectionVal0 - CorrectionVal0 - s32,CorrectionVal1 - CorrectionVal1 - s32,CorrectionVal2 - CorrectionVal2 - s32,CorrectionVal3 - CorrectionVal3 - s32,pad1 - pad1 - dummy8
 0,Do not erase -- 消すべからず,10,20,30,1,-
 10,Test Data 2 -- テストデータ2,100,200,300,0,-
 100,Super Ability -- ザコ,140001,140002,140003,1,-

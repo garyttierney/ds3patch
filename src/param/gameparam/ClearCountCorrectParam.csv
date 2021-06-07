@@ -1,5 +1,5 @@
 #ClearCountCorrectParam=CLEAR_COUNT_CORRECT_PARAM_ST
-ID,Name,HP,Mana,Stamina,PhysDmg,slashDmg,blowDmg,thrustDmg,neutral,MagicDmg,FireDmg,ThunderDmg,DarkDmg,PhysResist,MagicResist,FireResist,ThunderResist,DarkResist,StaminaDmg,MpRecover,PoisonResist,ToxicResist,BleedResist,CurseResist,FrostResist,HpRecover,subMpRecover,subHpRecover,pad1
+ID,Name,HP - HP - f32,Mana - Mana - f32,Stamina - Stamina - f32,PhysDmg - PhysDmg - f32,slashDmg - slashDmg - f32,blowDmg - blowDmg - f32,thrustDmg - thrustDmg - f32,neutral - neutral - f32,MagicDmg - MagicDmg - f32,FireDmg - FireDmg - f32,ThunderDmg - ThunderDmg - f32,DarkDmg - DarkDmg - f32,PhysResist - PhysResist - f32,MagicResist - MagicResist - f32,FireResist - FireResist - f32,ThunderResist - ThunderResist - f32,DarkResist - DarkResist - f32,StaminaDmg - StaminaDmg - f32,MpRecover - MpRecover - f32,PoisonResist - PoisonResist - f32,ToxicResist - ToxicResist - f32,BleedResist - BleedResist - f32,CurseResist - CurseResist - f32,FrostResist - FrostResist - f32,HpRecover - HpRecover - f32,subMpRecover - subMpRecover - f32,subHpRecover - subHpRecover - f32,pad1 - pad1 - dummy8
 0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-
 1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-
 2,,1.1,1,1.1,1.1,1,1,1,1.1,1.1,1.1,1.1,1.1,1.025,1.025,1.025,1.025,1.025,1.4,1.1,1.015,1.015,1.015,1.015,1.015,1,0.95,1,-

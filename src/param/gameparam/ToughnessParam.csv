@@ -1,5 +1,5 @@
 #ToughnessParam=TOUGHNESS_PARAM_ST
-ID,Name,Toughness,DamageLvlThreshold,IsToughnessEffective,pad1,SpEffectId,pad2
+ID,Name,Toughness - Toughness - f32,DamageLvlThreshold - DamageLvlThreshold - s16,IsToughnessEffective - IsToughnessEffective - u8,pad1 - pad1 - dummy8,SpEffectId - SpEffectId - s32,pad2 - pad2 - dummy8
 1,Generic parameters for enemies -- 敵用の汎用パラメータ,1,0,0,-,-1,-
 2,,0.2,0,0,-,6352,-
 3,,0.25,0,0,-,6352,-

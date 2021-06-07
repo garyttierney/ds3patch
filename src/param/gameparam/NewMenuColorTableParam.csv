@@ -1,5 +1,5 @@
 #NewMenuColorTableParam=MENU_PARAM_COLOR_TABLE_ST
-ID,Name,R,G,B,A
+ID,Name,R - R - u8,G - G - u8,B - B - u8,A - A - u8
 0,Chara Makeup: ○ ○ -- キャラメイク：○○用,255,0,0,255
 1,,200,0,0,255
 2,,155,0,0,255
