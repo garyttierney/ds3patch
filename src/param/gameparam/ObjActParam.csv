@@ -1,5 +1,5 @@
 #ObjActParam=OBJ_ACT_PARAM_ST
-ID,Name,actionEnableMsgId,actionFailedMsgId,spQualifiedPassEventFlag,playerAnimId,chrAnimId,validDist,spQualifiedId,spQualifiedId2,ObjDummyId,pad1,ObjAnimId,ValidPlayerAngle,spQualifiedType,spQualifiedType2,ValidObjAngle,ChrSorbType,eventKickTiming,pad2,actionButtonParamId,actionSuccessMsgId
+ID,Name,actionEnableMsgId - actionEnableMsgId - s32,actionFailedMsgId - actionFailedMsgId - s32,spQualifiedPassEventFlag - spQualifiedPassEventFlag - s32,playerAnimId - playerAnimId - s32,chrAnimId - chrAnimId - s32,validDist - validDist - s16,spQualifiedId - spQualifiedId - s16,spQualifiedId2 - spQualifiedId2 - s16,ObjDummyId - ObjDummyId - u8,pad1 - pad1 - dummy8,ObjAnimId - ObjAnimId - s32,ValidPlayerAngle - ValidPlayerAngle - u8,spQualifiedType - spQualifiedType - u8,spQualifiedType2 - spQualifiedType2 - u8,ValidObjAngle - ValidObjAngle - u8,ChrSorbType - ChrSorbType - u8,eventKickTiming - eventKickTiming - u8,pad2 - pad2 - dummy8,actionButtonParamId - actionButtonParamId - s32,actionSuccessMsgId - actionSuccessMsgId - s32
 0,Need -- 必要,10010500,-1,-1,60200,7100,150,0,0,191,-,1,60,0,0,30,0,0,-,-1,0
 110,Treasure Chest -- 宝箱,10010400,-1,-1,60080,7521,70,0,0,100,-,0,60,0,0,60,1,1,-,-1,0
 200,Treasure Chest -- 宝箱,10010400,-1,-1,60080,7521,70,0,0,100,-,1,60,0,0,60,1,1,-,-1,0

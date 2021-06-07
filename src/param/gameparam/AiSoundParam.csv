@@ -1,5 +1,5 @@
 #AiSoundParam=AI_SOUND_PARAM_ST
-ID,Name,Radius,lifeFrame,bSpEffectEnable [ON_OFF],Type [AI_SOUND_RATE_TYPE],fakeTargetType [AI_SOUND_FAKE_TARGET_TYPE],InterestCategory,UseHitDamageTeam [ON_OFF],pad
+ID,Name,Radius - Radius - f32,lifeFrame - lifeFrame - f32,bSpEffectEnable [ON_OFF] - bSpEffectEnable [ON_OFF] - u8,Type [AI_SOUND_RATE_TYPE] - Type [AI_SOUND_RATE_TYPE] - u8,fakeTargetType [AI_SOUND_FAKE_TARGET_TYPE] - fakeTargetType [AI_SOUND_FAKE_TARGET_TYPE] - u8,InterestCategory - InterestCategory - u8,UseHitDamageTeam [ON_OFF] - UseHitDamageTeam [ON_OFF] - u8,pad - pad - dummy8
 0,Default (do not edit) -- デフォルト（編集しない）,0,0,0,0,1,0,0,-
 1,Walk -- 歩き,0.5,1,0,1,1,0,0,-
 2,Run -- 走り,6,1,0,1,1,0,0,-

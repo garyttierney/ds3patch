@@ -1,5 +1,5 @@
 #CharMakeMenuListItemParam=CHARMAKEMENU_LISTITEM_PARAM_ST
-ID,Name,Value,CaptionId,IconID,pad1
+ID,Name,Value - Value - s32,CaptionId - CaptionId - s32,IconID - IconID - u8,pad1 - pad1 - dummy8
 0,Unconfigured -- 未設定,1,0,0,-
 1,,2,0,0,-
 2,,3,0,0,-

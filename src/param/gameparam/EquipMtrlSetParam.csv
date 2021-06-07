@@ -1,5 +1,5 @@
 #EquipMtrlSetParam=EQUIP_MTRL_SET_PARAM_ST
-ID,Name,MaterialId01,MaterialId02,MaterialId03,MaterialId04,MaterialId05,ItemNum01,ItemNum02,ItemNum03,ItemNum04,ItemNum05,isDisableDispNum01,isDisableDispNum02,isDisableDispNum03,isDisableDispNum04,isDisableDispNum05,pad1
+ID,Name,MaterialId01 - MaterialId01 - s32,MaterialId02 - MaterialId02 - s32,MaterialId03 - MaterialId03 - s32,MaterialId04 - MaterialId04 - s32,MaterialId05 - MaterialId05 - s32,ItemNum01 - ItemNum01 - s8,ItemNum02 - ItemNum02 - s8,ItemNum03 - ItemNum03 - s8,ItemNum04 - ItemNum04 - s8,ItemNum05 - ItemNum05 - s8,isDisableDispNum01 - isDisableDispNum01 - u8,isDisableDispNum02 - isDisableDispNum02 - u8,isDisableDispNum03 - isDisableDispNum03 - u8,isDisableDispNum04 - isDisableDispNum04 - u8,isDisableDispNum05 - isDisableDispNum05 - u8,pad1 - pad1 - dummy8
 0,Basic -- 基本,1250,-1,-1,-1,-1,1,-1,-1,-1,-1,0,0,1,0,0,-
 1,Basic + 1 -- 基本＋１,1000,-1,-1,-1,-1,2,-1,-1,-1,-1,0,0,1,0,0,-
 2,Basic + 2 -- 基本＋２,1000,-1,-1,-1,-1,4,-1,-1,-1,-1,0,0,1,0,0,-

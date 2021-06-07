@@ -1,5 +1,5 @@
 #NetworkMsgParam=NETWORK_MSG_PARAM_ST
-ID,Name,MsgType0,MsgType1,MsgType2,MsgType3,MsgId0,MsgId1,MsgId2,MsgId3,MsgId4,MsgId5,MsgId6,MsgId7,MsgId8,MsgId9,MsgId10,MsgId11,MsgId12,MsgId13,MsgId14,MsgId15,MsgId16,MsgId17,MsgId18,MsgId19,MsgId20,MsgId21,MsgId22,pad1
+ID,Name,MsgType0 - MsgType0 - u8,MsgType1 - MsgType1 - u8,MsgType2 - MsgType2 - u8,MsgType3 - MsgType3 - u8,MsgId0 - MsgId0 - s32,MsgId1 - MsgId1 - s32,MsgId2 - MsgId2 - s32,MsgId3 - MsgId3 - s32,MsgId4 - MsgId4 - s32,MsgId5 - MsgId5 - s32,MsgId6 - MsgId6 - s32,MsgId7 - MsgId7 - s32,MsgId8 - MsgId8 - s32,MsgId9 - MsgId9 - s32,MsgId10 - MsgId10 - s32,MsgId11 - MsgId11 - s32,MsgId12 - MsgId12 - s32,MsgId13 - MsgId13 - s32,MsgId14 - MsgId14 - s32,MsgId15 - MsgId15 - s32,MsgId16 - MsgId16 - s32,MsgId17 - MsgId17 - s32,MsgId18 - MsgId18 - s32,MsgId19 - MsgId19 - s32,MsgId20 - MsgId20 - s32,MsgId21 - MsgId21 - s32,MsgId22 - MsgId22 - s32,pad1 - pad1 - dummy8
 0,,3,0,1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-
 100,,3,0,1,0,2300000,2300001,2300002,-1,2300100,2300101,2300102,-1,-1,-1,-1,-1,-1,-1,-1,2300105,-1,-1,-1,-1,-1,-1,-1,-
 101,,3,0,1,0,2301000,2301001,2301002,-1,2301100,2301101,2301102,2301200,2301201,2301202,2301314,2301304,-1,2301306,2301307,2301105,2301205,2301308,-1,-1,-1,-1,-1,-

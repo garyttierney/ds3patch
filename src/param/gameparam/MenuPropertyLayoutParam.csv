@@ -1,5 +1,5 @@
 #MenuPropertyLayoutParam=MENUPROPERTY_LAYOUT
-ID,Name,LayoutPath,PropertyId [MENU_PROPERTY_ID],captionTextId,HelpTextId,pad1
+ID,Name,LayoutPath - LayoutPath - fixstr,PropertyId [MENU_PROPERTY_ID] - PropertyId [MENU_PROPERTY_ID] - s32,captionTextId - captionTextId - s32,HelpTextId - HelpTextId - s32,pad1 - pad1 - dummy8
 0,,,0,0,0,-
 1000,Detail status: Normal item -- 詳細ステータス：通常アイテム,Title,100,0,0,-
 1001,,TopItem_0,200,0,31360,-

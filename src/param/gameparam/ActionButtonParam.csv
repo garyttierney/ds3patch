@@ -1,5 +1,5 @@
 #ActionButtonParam=ACTIONBUTTON_PARAM_ST
-ID,Name,regionType,pad1,dummyPoly1,dummyPoly2,Radius,Angle,depth,width,height,baseHeightOffset,angleCheckType,pad2,AllowAngle,textBoxType,pad3,textId,InvalidFlag,grayoutFlag,priority,execInvalidTime,execButtonCircle,pad4
+ID,Name,regionType - regionType - u8,pad1 - pad1 - dummy8,dummyPoly1 - dummyPoly1 - s32,dummyPoly2 - dummyPoly2 - s32,Radius - Radius - f32,Angle - Angle - s32,depth - depth - f32,width - width - f32,height - height - f32,baseHeightOffset - baseHeightOffset - f32,angleCheckType - angleCheckType - u8,pad2 - pad2 - dummy8,AllowAngle - AllowAngle - s32,textBoxType - textBoxType - u8,pad3 - pad3 - dummy8,textId - textId - s32,InvalidFlag - InvalidFlag - s32,grayoutFlag - grayoutFlag - s32,priority - priority - s32,execInvalidTime - execInvalidTime - f32,execButtonCircle - execButtonCircle - u8,pad4 - pad4 - dummy8
 0,Test 0 -- テスト0,0,-,1,1,1,1,1,1,1,1,0,-,1,0,-,0,1,1,1,1,1,-
 1,Test One -- テスト1,0,-,0,0,0,0,0,0,0,0,0,-,0,0,-,0,0,0,0,0,0,-
 1000,Regain The Lost Life -- 失ったライフを取り戻す,0,-,-1,-1,1.5,180,0,0,3,-1,0,-,180,0,-,50000200,-1,-1,1,3,1,-

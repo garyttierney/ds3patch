@@ -1,5 +1,5 @@
 #ShopLineupParam=SHOP_LINEUP_PARAM
-ID,Name,EquipId,value,mtrlId,EventFlag,qwcID,sellQuantity,shopType,equipType,value_SAN,pad1,PriceRate
+ID,Name,EquipId - EquipId - s32,value - value - s32,mtrlId - mtrlId - s32,EventFlag - EventFlag - s32,qwcID - qwcID - s32,sellQuantity - sellQuantity - s16,shopType - shopType - u8,equipType - equipType - u8,value_SAN - value_SAN - s16,pad1 - pad1 - dummy8,PriceRate - PriceRate - f32
 1,Do not erase -- 消すべからず,240,100,-1,-1,-1,-1,0,3,-1,-,1
 2000,Noconata -- ノコナタ,7000000,0,-1,72101000,-1,1,0,0,-1,-,1
 2001,Axe Rod -- 斧竿,5000000,0,-1,72101001,-1,1,0,0,-1,-,1

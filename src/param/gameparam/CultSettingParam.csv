@@ -1,5 +1,5 @@
 #CultSettingParam=CULT_SETTING_PARAM_ST
-ID,Name,Distance,Angle,EventFlagId,Coefficient.1000,CultState1,CultState2,pad1
+ID,Name,Distance - Distance - f32,Angle - Angle - f32,EventFlagId - EventFlagId - s32,Coefficient.1000 - Coefficient.1000 - s16,CultState1 - CultState1 - s8,CultState2 - CultState2 - s8,pad1 - pad1 - dummy8
 0,Default -- デフォルト,1.5,90,-1,0,-1,-1,-
 10,Test -- テスト,1.5,90,-1,0,0,0,-
 100,For testing -- テスト用,1.5,90,-1,0,0,0,-

@@ -1,5 +1,5 @@
 #KnowledgeLoadScreenItemParam=KNOWLEDGE_LOADSCREEN_ITEM_PARAM_ST
-ID,Name,LoadscreenCategoryId,KnowledgeId,pad1
+ID,Name,LoadscreenCategoryId - LoadscreenCategoryId - u32,KnowledgeId - KnowledgeId - s32,pad1 - pad1 - dummy8
 0,,0,1000000,-
 1,,0,1020000,-
 2,,0,1070000,-

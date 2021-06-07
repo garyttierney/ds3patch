@@ -1,5 +1,5 @@
 #GameProgressParam=GAME_PROGRESS_PARAM_ST
-ID,Name,EventFlagId,ProgressId,pad1
+ID,Name,EventFlagId - EventFlagId - s32,ProgressId - ProgressId - u8,pad1 - pad1 - dummy8
 0,,6100,10,-
 1,,6101,10,-
 2,,6102,10,-

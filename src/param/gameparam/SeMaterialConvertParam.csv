@@ -1,5 +1,5 @@
 #SeMaterialConvertParam=SE_MATERIAL_CONVERT_PARAM_ST
-ID,Name,Material_Id
+ID,Name,Material_Id - Material_Id - s32
 1,Cobblestone -- 石畳,1
 2,Stone -- 石,2
 3,Soil -- 土,3

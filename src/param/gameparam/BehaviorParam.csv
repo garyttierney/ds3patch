@@ -1,5 +1,5 @@
 #BehaviorParam=BEHAVIOR_PARAM_ST
-ID,Name,variationId,behaviorJudgeId,ezStateBehaviorType_old,refType,pad1,refId,sfxVariationId,stamina,mp,category,heroPoint,pad2
+ID,Name,variationId - variationId - s32,behaviorJudgeId - behaviorJudgeId - s32,ezStateBehaviorType_old - ezStateBehaviorType_old - u8,refType - refType - u8,pad1 - pad1 - dummy8,refId - refId - s32,sfxVariationId - sfxVariationId - s32,stamina - stamina - s32,mp - mp - s32,category - category - u8,heroPoint - heroPoint - u8,pad2 - pad2 - dummy8
 0,For testing -- テスト用,0,0,0,0,-,0,-1,0,0,0,0,-
 5,Disabled behavior [System] -- 無効行動【システム】,0,0,0,0,-,4,-1,0,0,0,0,-
 7,Pc_sossign [System] -- PC_SOSsign【システム】,0,0,3,2,-,4,29,0,0,0,0,-

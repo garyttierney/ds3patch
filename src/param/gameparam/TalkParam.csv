@@ -1,5 +1,5 @@
 #TalkParam=TALK_PARAM_ST
-ID,Name,PcGenderFemale1,PcGenderMale1,SpEffectId0,AnimationId0,SpEffectId1,AnimationId1,SpEffectId2,AnimationId2,EventFlagId,EventID_Female,EventID_Male,TalkTime[0.0 - 1.0]
+ID,Name,PcGenderFemale1 - PcGenderFemale1 - s32,PcGenderMale1 - PcGenderMale1 - s32,SpEffectId0 - SpEffectId0 - s32,AnimationId0 - AnimationId0 - s32,SpEffectId1 - SpEffectId1 - s32,AnimationId1 - AnimationId1 - s32,SpEffectId2 - SpEffectId2 - s32,AnimationId2 - AnimationId2 - s32,EventFlagId - EventFlagId - s32,EventID_Female - EventID_Female - s32,EventID_Male - EventID_Male - s32,TalkTime[0.0 - 1.0] - TalkTime[0.0 - 1.0] - f32
 10000100,,100,30000001,-1,-1,-1,-1,0,-1,-1,100,30000001,0
 10000200,,200,30000001,-1,-1,-1,-1,0,-1,-1,200,30000001,0
 10000300,,300,30000001,-1,-1,-1,-1,0,-1,-1,300,30000001,0
