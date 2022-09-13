@@ -1,5 +1,5 @@
 #CharMakeMenuTopParam=CHARMAKEMENUTOP_PARAM_ST
-ID,Name,CommandID,FaceParamID,TableID,ViewCondition,PreviewMode,pad1,MenuType,pad2
+ID,Name,CommandID - CommandID - s32,FaceParamID - FaceParamID - s32,TableID - TableID - s32,ViewCondition - ViewCondition - s32,PreviewMode - PreviewMode - u8,pad1 - pad1 - dummy8,MenuType - MenuType - s8,pad2 - pad2 - dummy8
 1,Gender -- 性別,20,402012,0,0,3,-,1,-
 2,Age group -- 年齢層,21,402013,0,0,0,-,1,-
 3,Voice -- 声,22,420001,0,0,0,-,1,-

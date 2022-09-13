@@ -1,5 +1,5 @@
 #MenuValueTableParam=MENU_VALUE_TABLE_SPEC
-ID,Name,Value,TextId,CompareType,pad1
+ID,Name,Value - Value - s32,TextId - TextId - s32,CompareType - CompareType - u8,pad1 - pad1 - dummy8
 90,,1,11330,1,-
 91,,0,11331,2,-
 100,A table that converts a number to an e-s character -- 数値をE～Sの文字へ変換するテーブル,141,11321,1,-

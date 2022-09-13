@@ -1,5 +1,5 @@
 #ThrowDirectionSfxParam=THROW_DIRECTION_SFX_PARAM_ST
-ID,Name,SfxId1,SfxId2,SfxId3,SfxId4,SfxId5,SfxId6,SfxId7,SfxId8,SfxId9,SfxId10,SfxId11,SfxId12,SfxId13,SfxId14,SfxId15,SfxId16,SfxId17,SfxId18,SfxId19,SfxId20,SfxId21,SfxId22,SfxId23,SfxId24,SfxId25,SfxId26,SfxId27,SfxId28,SfxId29,SfxId30,pad1
+ID,Name,SfxId1 - SfxId1 - s32,SfxId2 - SfxId2 - s32,SfxId3 - SfxId3 - s32,SfxId4 - SfxId4 - s32,SfxId5 - SfxId5 - s32,SfxId6 - SfxId6 - s32,SfxId7 - SfxId7 - s32,SfxId8 - SfxId8 - s32,SfxId9 - SfxId9 - s32,SfxId10 - SfxId10 - s32,SfxId11 - SfxId11 - s32,SfxId12 - SfxId12 - s32,SfxId13 - SfxId13 - s32,SfxId14 - SfxId14 - s32,SfxId15 - SfxId15 - s32,SfxId16 - SfxId16 - s32,SfxId17 - SfxId17 - s32,SfxId18 - SfxId18 - s32,SfxId19 - SfxId19 - s32,SfxId20 - SfxId20 - s32,SfxId21 - SfxId21 - s32,SfxId22 - SfxId22 - s32,SfxId23 - SfxId23 - s32,SfxId24 - SfxId24 - s32,SfxId25 - SfxId25 - s32,SfxId26 - SfxId26 - s32,SfxId27 - SfxId27 - s32,SfxId28 - SfxId28 - s32,SfxId29 - SfxId29 - s32,SfxId30 - SfxId30 - s32,pad1 - pad1 - dummy8
 0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-
 100,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-
 101,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-

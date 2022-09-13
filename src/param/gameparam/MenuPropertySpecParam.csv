@@ -1,5 +1,5 @@
 #MenuPropertySpecParam=MENUPROPERTY_SPEC
-ID,Name,CaptionTextId,IconId,RequiredPropertyId,CompareType,RequiredPropertyFormatId,AdhocCaption
+ID,Name,CaptionTextId - CaptionTextId - s32,IconId - IconId - s32,RequiredPropertyId - RequiredPropertyId - s32,CompareType - CompareType - u8,RequiredPropertyFormatId - RequiredPropertyFormatId - u8,AdhocCaption - AdhocCaption - fixstrW
 0,---- -- ----,0,-1,0,0,0,
 100,[Item common name] -- 【アイテム共通】 名前,0,-1,0,0,0,名前
 101,[Item Common] Description -- 【アイテム共通】 説明,0,-1,0,0,0,説明

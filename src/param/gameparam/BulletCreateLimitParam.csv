@@ -1,5 +1,5 @@
 #BulletCreateLimitParam=BULLET_CREATE_LIMIT_PARAM_ST
-ID,Name,maxAmmount,pad1
+ID,Name,maxAmmount - maxAmmount - u8,pad1 - pad1 - dummy8
 0,,0,-
 1,,3,-
 2,,1,-

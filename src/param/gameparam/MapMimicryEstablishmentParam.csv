@@ -1,5 +1,5 @@
 #MapMimicryEstablishmentParam=MAP_MIMICRY_ESTABLISHMENT_PARAM_ST
-ID,Name,RandomizerCoefficient0,RandomizerCoefficient1,RandomizerCoefficient2,TransformVfxId0,LoopVfxId0,DestroyVfxId0,TransformVfxId1,LoopVfxId1,DestroyVfxId1,TransformVfxId2,LoopVfxId2,DestroyVfxId2,pad1
+ID,Name,RandomizerCoefficient0 - RandomizerCoefficient0 - f32,RandomizerCoefficient1 - RandomizerCoefficient1 - f32,RandomizerCoefficient2 - RandomizerCoefficient2 - f32,TransformVfxId0 - TransformVfxId0 - s32,LoopVfxId0 - LoopVfxId0 - s32,DestroyVfxId0 - DestroyVfxId0 - s32,TransformVfxId1 - TransformVfxId1 - s32,LoopVfxId1 - LoopVfxId1 - s32,DestroyVfxId1 - DestroyVfxId1 - s32,TransformVfxId2 - TransformVfxId2 - s32,LoopVfxId2 - LoopVfxId2 - s32,DestroyVfxId2 - DestroyVfxId2 - s32,pad1 - pad1 - dummy8
 0,Do not erase -- 消すべからず,1000,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-
 300000000,,500,500,-1,430000,430001,430002,430030,430031,430032,-1,-1,-1,-
 300000001,,1000,-1,-1,430010,430011,430012,-1,-1,-1,-1,-1,-1,-

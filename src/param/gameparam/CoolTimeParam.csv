@@ -1,5 +1,5 @@
 #CoolTimeParam=COOL_TIME_PARAM_ST
-ID,Name,limitationTime_0,observationTime_0,limitationTime_1,observationTime_1,limitationTime_2,observationTime_2,limitationTime_3,observationTime_3
+ID,Name,limitationTime_0 - limitationTime_0 - f32,observationTime_0 - observationTime_0 - f32,limitationTime_1 - limitationTime_1 - f32,observationTime_1 - observationTime_1 - f32,limitationTime_2 - limitationTime_2 - f32,observationTime_2 - observationTime_2 - f32,limitationTime_3 - limitationTime_3 - f32,observationTime_3 - observationTime_3 - f32
 101,,900,600,600,450,300,200,0,0
 102,,900,600,600,450,300,200,0,0
 103,,900,480,600,450,300,200,0,0

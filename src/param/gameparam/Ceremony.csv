@@ -1,5 +1,5 @@
 #Ceremony=CEREMONY_PARAM_ST
-ID,Name,EventLayerID,MapStudioLayerID,GparamID[Up],GparamID[Low],Point CloudID,GI_TextureID,Light GroupID,IsReload,IsDisableOnline,pad1
+ID,Name,EventLayerID - EventLayerID - s32,MapStudioLayerID - MapStudioLayerID - s32,GparamID[Up] - GparamID[Up] - s16,GparamID[Low] - GparamID[Low] - s16,Point CloudID - Point CloudID - s32,GI_TextureID - GI_TextureID - s32,Light GroupID - Light GroupID - s32,IsReload - IsReload - u8,IsDisableOnline - IsDisableOnline - u8,pad1 - pad1 - dummy8
 1000,For automatic patrol: normal -- 自動巡回用:通常,0,0,0,0,0,0,0,0,0,-
 1001,For automatic circuit: ritual A -- 自動巡回用:儀式A,0,1,0,0,0,0,0,0,0,-
 1002,Automatic Circuit: Ritual b -- 自動巡回用:儀式B,0,2,0,0,0,0,0,0,0,-

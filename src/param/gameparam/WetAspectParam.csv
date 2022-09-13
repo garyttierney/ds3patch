@@ -1,5 +1,5 @@
 #WetAspectParam=WET_ASPECT_PARAM_ST
-ID,Name,R1,G1,B1,pad1,Alpha1,R2,G2,B2,pad2,Alpha2,WetRate,WetCorrection,pad3
+ID,Name,R1 - R1 - u8,G1 - G1 - u8,B1 - B1 - u8,pad1 - pad1 - dummy8,Alpha1 - Alpha1 - f32,R2 - R2 - u8,G2 - G2 - u8,B2 - B2 - u8,pad2 - pad2 - dummy8,Alpha2 - Alpha2 - f32,WetRate - WetRate - f32,WetCorrection - WetCorrection - u8,pad3 - pad3 - dummy8
 1,Water wet -- 水濡れ,30,30,30,-,0.6,30,30,30,-,0.6,0.8,150,-
 2,Poison Wet -- 毒濡れ,28,20,5,-,0.85,28,22,15,-,0.7,0.8,140,-
 3,Oil wet -- 油濡れ,30,25,20,-,0.75,80,40,20,-,0.75,0.9,150,-

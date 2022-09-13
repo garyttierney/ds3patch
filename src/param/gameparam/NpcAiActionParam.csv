@@ -1,5 +1,5 @@
 #NpcAiActionParam=NPC_AI_ACTION_PARAM_ST
-ID,Name,directionMovementId,actId0,actId1,actId2,isDisableDirectionMovement,isDisableAct0,isDisableAct1,isDisableAct2,actType,isDisableAiCheck,pad1
+ID,Name,directionMovementId - directionMovementId - u8,actId0 - actId0 - u8,actId1 - actId1 - u8,actId2 - actId2 - u8,isDisableDirectionMovement - isDisableDirectionMovement - u8,isDisableAct0 - isDisableAct0 - u8,isDisableAct1 - isDisableAct1 - u8,isDisableAct2 - isDisableAct2 - u8,actType - actType - s32,isDisableAiCheck - isDisableAiCheck - u8,pad1 - pad1 - dummy8
 0,,0,8,0,0,0,0,0,0,0,0,-
 1,,0,8,0,0,0,1,0,0,0,1,-
 2,,0,9,0,0,0,0,0,0,0,0,-

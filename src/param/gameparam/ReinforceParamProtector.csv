@@ -1,5 +1,5 @@
 #ReinforceParamProtector=REINFORCE_PARAM_PROTECTOR_ST
-ID,Name,physicDefRate,magicDefRate,fireDefRate,thunderDefRate,slashDefRate,blowDefRate,thrustDefRate,resistPoisonRate,resistToxicRate,resistBloodRate,resistCurseRate,ResidentSpEffectId1,ResidentSpEffectId2,ResidentSpEffectId3,materialSetId,darkDefRate,resistFrost,pad1
+ID,Name,physicDefRate - physicDefRate - f32,magicDefRate - magicDefRate - f32,fireDefRate - fireDefRate - f32,thunderDefRate - thunderDefRate - f32,slashDefRate - slashDefRate - f32,blowDefRate - blowDefRate - f32,thrustDefRate - thrustDefRate - f32,resistPoisonRate - resistPoisonRate - f32,resistToxicRate - resistToxicRate - f32,resistBloodRate - resistBloodRate - f32,resistCurseRate - resistCurseRate - f32,ResidentSpEffectId1 - ResidentSpEffectId1 - u8,ResidentSpEffectId2 - ResidentSpEffectId2 - u8,ResidentSpEffectId3 - ResidentSpEffectId3 - u8,materialSetId - materialSetId - u8,darkDefRate - darkDefRate - f32,resistFrost - resistFrost - f32,pad1 - pad1 - dummy8
 0,Usually -- 通常,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,-
 1,Normal + 1 -- 通常＋1,1.1,1.1,1.1,1.1,1,1,1,1,1,1,1,0,0,0,1,1,1,-
 2,Normal + 2 -- 通常＋2,1.2,1.2,1.2,1.2,1,1,1,1,1,1,1,0,0,0,2,1,1,-
